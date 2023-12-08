@@ -1,0 +1,10 @@
+[
+  { "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "year": 1925, "price": 5500 },
+  { "title": "To Kill a Mockingbird", "author": "Harper Lee", "year": 1960, "price": 68000 },
+  { "title": "1984", "author": "George Orwell", "year": 1949, "price": 55000 },
+  { "title": "Kraby Patty", "author": "Spongebob", "year": 2002 ,"price": 50000 },
+  { "title": "K.0", "author": "Mark P", "year": 1978 ,"price": 50000 },
+  { "title": "Power of SSS", "author": "Plank", "year": 2000 ,"price": 55000 },
+  { "title": "Tank of Wars", "author": "Hippo Polarr", "year": 1985 ,"price": 50000 },
+  { "title": "The Catcher in the Rye", "author": "J.D. Salinger", "year": 1951, "price": 30000 }
+]
