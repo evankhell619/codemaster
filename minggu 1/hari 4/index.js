@@ -21,3 +21,4 @@ const formatter = require('./formatter.js')
 console.log(formatter.moneyFormat(5000.6))
 console.log(formatter.dateFormat(new Date()))
 ;
+

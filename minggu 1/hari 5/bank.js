@@ -1,6 +1,6 @@
 import { BankAccount } from "./lat1.js";
 
-const rekening = new BankAccount(123, 'Joko', 10000 )
+const rekening = new BankAccount(123, 'Kupa', 10000 )
 
 class Bank {
   constructor(nameBank, NamePerson, numberBank){
@@ -16,6 +16,6 @@ class Bank {
   }
 }
 
-const myBank = new Bank('BNI','Joko', 123)
+const myBank = new Bank('BNI','Popol', 123)
 
 myBank.addAccount();

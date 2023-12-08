@@ -1,4 +1,0 @@
-import {personn} from './test2'
-
-const john = new personn ('John' ,25)
-john.greet() 
