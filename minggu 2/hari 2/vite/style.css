@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 29px;
+}
+
+body {
+  font-size: 1rem;
+  background-color: red;
+  line-height: 1.5;
+  
+}

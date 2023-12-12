@@ -1,0 +1,22 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+
+  
+}
+
+.header {
+  grid-column: 1 / -1;
+}
+.sidebar {
+  grid-row: 2 / 3;
+}
+.content {
+  grid-row: 2 /3;
+}
+
+.footer {
+  grid-row: 2 /3 ;
+}

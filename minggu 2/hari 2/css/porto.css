@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+}
+
+header {
+  background-color: var(--bg);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color:var(--pink) ;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color:var(--pink) ;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+
+.container, .container-skill, .container-project {
+  max-width: 100%;
+  background-color: white;
+  color: var(--bg);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.intro, .intro-skill, .intro-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.title, .title-skill, .title-project{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.des, .des-skill, .des-project {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.ft-cont {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+}
+
+.item1 {
+  
+}
+
+.item2 {
+
+}
