@@ -13,6 +13,7 @@ const Navbar = () => {
           <Link className="text-white hover:text-gray-300" to="/Home">Home</Link>
           <Link className="text-white hover:text-gray-300" to="/About">About</Link>
           <Link className="text-white hover:text-gray-300" to="/Login">Login</Link>
+          <Link className="text-white hover:text-gray-300" to="/ToDoList">ToDoList</Link>
         </div>
 
       </div>

@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "title": "The Lord of the Rings",
+    "authors": ["J.R.R. Tolkien"],
+    "year": 1954,
+    "synopsis": "A hobbit named Frodo inherits the One Ring, an evil artifact that threatens to plunge Middle-earth into darkness. He embarks on a perilous journey with his companions to destroy the Ring and defeat the Dark Lord Sauron. The book is divided into three volumes: The Fellowship of the Ring, The Two Towers, and The Return of the King. It explores themes of good vs. evil, friendship, courage, and the corrupting influence of power.",
+    "genre": "fantasy",
+    "language": "English",
+    "average_rating": 4.8,
+    "reviews": 100000
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "synopsis": "Elizabeth Bennet, the eldest of five daughters, must navigate the complexities of social expectations and personal desires in early 19th-century England. The novel explores themes of class, marriage, and the importance of self-worth. It follows Elizabeth's witty and intelligent observations as she encounters two contrasting suitors: the wealthy and proud Mr. Darcy and the charming but reckless Mr. Wickham.",
+    "genre": "romance",
+    "language": "English",
+    "average_rating": 4.5,
+    "reviews": 50000
+  },
+  {
+    "id": 3,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "year": 1960,
+    "synopsis": "Scout Finch, a young girl growing up in the American South during the 1930s, witnesses the trial of her father, Atticus Finch, who defends a Black man accused of rape. The novel explores themes of racial injustice, prejudice, and the power of innocence. It is narrated by Scout, offering a unique perspective on the events and the complex moral issues at play.",
+    "genre": "historical fiction",
+    "language": "English",
+    "average_rating": 4.9,
+    "reviews": 200000
+  },
+  {
+    "id": 4,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "year": 1967,
+    "synopsis": "This epic novel charts the rise and fall of the Buendia family and the fictional town of Macondo in Colombia. It weaves together magical realism, historical events, and fantastical elements to create a unique and captivating story. The book explores themes of love, loss, isolation, and the cyclical nature of time.",
+    "genre": "magical realism",
+    "language": "Spanish",
+    "average_rating": 4.7,
+    "reviews": 80000
+  },
+  {
+    "id": 5,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "synopsis": "Set in the roaring twenties, the novel follows the tragic story of Jay Gatsby, a mysterious millionaire who throws lavish parties in an attempt to win back his lost love, Daisy Buchanan. It captures the decadence and disillusionment of the Jazz Age, exploring themes of wealth, class, unrequited love, and the American Dream.",
+    "genre": "drama",
+    "language": "English",
+    "average_rating": 4.6,
+    "reviews": 75000
+  },
+  {
+    "id": 6,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": 1818,
+    "synopsis": "Victor Frankenstein, obsessed with the creation of life, assembles a creature from human body parts. However, his creation is not the beautiful and intelligent being he envisioned, but a monstrous and ostracized being. The novel explores themes of scientific ambition, the responsibility of creation, and the consequences of defying natural order.",
+    "genre": "gothic horror",
+    "language": "English",
+    "average_rating": 4.4,
+    "reviews": 40000
+  },
+  {
+    "id": 7,
+    "title": "Hamlet",
+    "author": "William Shakespeare",
+    "year": 1603,
+    "synopsis": "Prince Hamlet of Denmark seeks revenge for the murder of his father by his uncle, Claudius. The play explores themes of grief, betrayal, madness, and the nature of existence. It is considered one of Shakespeare's greatest tragedies and has been adapted and performed countless times throughout history.",
+    "genre": "tragedy",
+    "language": "English",
+    "average_rating": 4.7,
+    "reviews": 150000
+  },
+  {
+    "id": 8,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "author": "Ken Kesey",
+    "year": 1962,
+    "synopsis": "Randle McMurphy, a rebellious and free-spirited man, fakes mental illness to avoid prison sentence and ends up in a psychiatric ward. He challenges the oppressive authority of the head nurse, Nurse Ratched, and inspires his fellow patients to reclaim their individuality and dignity. The novel explores themes of institutionalization, sanity vs. insanity, and the human spirit's resilience.",
+    "genre": "psychological drama",
+    "language": "English",
+    "average_rating": 4.6,
+    "reviews": 90000
+  },
+  {
+    "id": 9,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "year": 2003,
+    "synopsis": "Set in Afghanistan, the novel tells the story of two friends, Amir and Hassan, from their childhoods through adulthood. Their bond is tested when Amir betrays Hassan, leading to a lifetime of guilt and regret. As adults, Amir takes a chance to redeem himself by risking his life to save Hassan's son. The story explores themes of loyalty, betrayal, forgiveness, and the enduring power of love.",
+    "genre": "historical fiction",
+    "language": "English",
+    "average_rating": 4.7,
+    "reviews": 250000
+  },
+  {
+    "id": 10,
+    "title": "The Metamorphosis",
+    "author": "Franz Kafka",
+    "year": 1915,
+    "synopsis": "Gregor Samsa wakes up one morning to find himself transformed into a giant insect. This grotesque transformation throws his life and his family's into chaos as they struggle to come to terms with his new form and the implications it has for their future. The novel explores themes of alienation, isolation, and the absurdity of existence in a world that often feels meaningless.",
+    "genre": "absurdist fiction",
+    "language": "German",
+    "average_rating": 4.2,
+    "reviews": 60000
+  }
+]
