@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Holy Grail</title>
+        <style>
+          header.box {
+            border-color: hsl(45deg 100% 50%);
+            background-color: hsl(45deg 100% 50% / 0.2);
+          }
+          .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+          }
+          .middle {
+            display: flex;
+            flex: 1;
+          }
+          nav.box {
+            border-color: hsl(170deg 100% 35%);
+            background-color: hsl(170deg 100% 35% / 0.2);
+          }
+          main.box {
+            flex: 3;
+            border-color: hsl(220deg 100% 50%);
+            background-color: hsl(220deg 100% 50% / 0.2);
+          }
+          aside.box {
+            border-color: hsl(300deg 100% 45%);
+            background-color: hsl(300deg 100% 45% / 0.2);
+          }
+
+          footer.box {
+            border-color: hsl(350deg 100% 60%);
+            background-color: hsl(350deg 100% 60% / 0.2);
+          }
+
+          html,
+          body {
+            padding: 0;
+            margin: 0;
+          }
+
+          /* * {
+            box-sizing: border-box;
+          } */
+
+          .box {
+            border: 3px solid;
+            padding: 16px;
+          }
+          @media (max-width: 450px) {
+            section {
+              flex-direction: column;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <div class="wrapper">
+          <header class="box">Header</header>
+          <section class="middle">
+            <nav class="box">Nav</nav>
+            <main class="box">Main Content</main>
+            <aside class="box">Ad unit</aside>
+          </section>
+          <div class="oy">
+            <footer class="box">Footer</footer>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

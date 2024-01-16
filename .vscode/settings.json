@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "\"Fira Code\", Consolas, 'Courier New', monospace",
+  "editor.fontFamily": " \"JetBrains Mono\" ,\"Fira Code\", Consolas, 'Courier New', monospace",
   "editor.tabSize": 2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,

@@ -1,0 +1,11 @@
+{
+  "name": "day-5",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}

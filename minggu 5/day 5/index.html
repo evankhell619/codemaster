@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        justify-content: space-between;
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
+        max-width: 1100px;
+        flex-wrap: wrap;
+      }
+      .right {
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .menu {
+        gap: 5px;
+      }
+      ul {
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+      }
+      @media (max-width: 200px) {
+        header {
+          flex-direction: column;
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="header.css" />
+        <title>Header</title>
+      </head>
+      <body>
+        <header>
+          <div class="logo left">
+            <h1>The Logo</h1>
+          </div>
+          <div class="right">
+            <nav>
+              <ul class="menu">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Latest</a></li>
+                <li><a href="#">Top Picks</a></li>
+              </ul>
+            </nav>
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+            </div>
+            <div class="login">
+              <button>Login</button>
+            </div>
+          </div>
+        </header>
+      </body>
+    </html>
+  </body>
+</html>

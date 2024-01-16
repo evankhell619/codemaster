@@ -1,8 +1,8 @@
 class Animal {
   constructor(name) {
-    this.name = name 
+    this.name = name;
   }
-  
+
   speak() {
     console.log(`${this.name} make sound`);
   }
@@ -10,5 +10,5 @@ class Animal {
 
 class Bird extends Animal {}
 
-const tweety = new Bird ('Tweet')
-tweety.speak() 
+const tweety = new Bird("Tweet");
+tweety.speak();
