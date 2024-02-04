@@ -1,16 +1,3 @@
-//midleware 1
-const timeLog = (req, res, next) => {
-  console.log("Time", Date.now());
-  next();
-};
-
-// midleware2
-const loggerMiddle = (req, res, next) => {
-  console.log(` Request to  : ${req.method} ${req.url}`);
-  next();
-};
-// app.use(loggerMiddle);
-
 const checkToken = (req, res, next) => {
   const { token } = req.headers;
 

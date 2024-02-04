@@ -8,12 +8,55 @@ const port = 3333;
 app.use(express.json());
 app.use(timeLog);
 app.use(loggerMiddle);
-app.use(checkToken);
+// app.use(checkToken);
 
 // app.get("/", (req, res) => {
 //   res.send("hellowww popollll");
 //   res.json({ msg: "hellowww popollll" });
 // });
+
+// //! use pug start
+// app.set("view engine", "pug");
+// app.set("views", "./views");
+
+// app.get("/profile", (req, res) => {
+//   res.render("profile", { name: " Popol" });
+// });
+
+// app.get("/web/books", (req, res) => {
+//   res.render("books", { books });
+// });
+// //! pug end
+
+// ? EJS start
+
+// app.set("view engine", "ejs");
+// app.set("views", "./views");
+
+// app.get("/profile", (req, res) => {
+//   res.render("profile", { name: " Popol" });
+// });
+
+// app.get("/web/books", (req, res) => {
+//   res.render("books", { books });
+// });
+
+// ? EJS end
+
+// * handlebar start
+
+app.set("view engine", "handlebars");
+app.set("views", "./views");
+
+app.get("/profile", (req, res) => {
+  res.render("profile", { name: " Popol" });
+});
+
+app.get("/web/books", (req, res) => {
+  res.render("books", { books });
+});
+
+// * handle bar end
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello world" });
@@ -34,10 +77,6 @@ app.get("/books/:id", (req, res) => {
   }
 });
 
-// app.use((req, res) => {
-//   res.status(404).json({ message: "Page not found" });
-// });
-
 app.post("/books", (req, res) => {
   const newBook = req.body;
   books.push(newBook);
@@ -46,7 +85,7 @@ app.post("/books", (req, res) => {
   res.end(JSON.stringify(books));
 });
 
-//put
+// !put
 app.put("/books/:id", (req, res) => {
   const bookId = Number(req.params.id);
   const bookIndex = books.findIndex((book) => book.id === bookId);
