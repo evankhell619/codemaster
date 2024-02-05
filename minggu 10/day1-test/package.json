@@ -1,0 +1,16 @@
+{
+  "name": "day1-test",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "assestion.js",
+  "scripts": {
+    "test": "vitest --run --reporter verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vitest": "^1.2.2"
+  }
+}
