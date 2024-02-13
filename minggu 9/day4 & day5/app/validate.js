@@ -1,7 +1,7 @@
 export const validateTokenReq = (req, res, next) => {
   const error = {};
   if (!req.body.email) {
-    error.email = "emaail required";
+    error.email = "email required";
   }
   if (!req.body.password) {
     error.password = "pass error";
