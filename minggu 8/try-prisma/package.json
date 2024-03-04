@@ -19,5 +19,8 @@
   },
   "prisma": {
     "schema": "./prisma/schema.prisma"
+  },
+  "devDependencies": {
+    "prisma-dbml-generator": "^0.12.0"
   }
 }

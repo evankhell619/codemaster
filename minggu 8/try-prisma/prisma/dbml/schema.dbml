@@ -1,0 +1,149 @@
+//// ------------------------------------------------------
+//// THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+//// ------------------------------------------------------
+
+Table users {
+  id Int [pk, increment]
+  firstName String [not null]
+  lastName String [not null]
+  email String [unique, not null]
+  password String [not null]
+  address String [not null]
+  roleId Int
+  cart Cart [not null]
+  orders orders [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Role roles
+}
+
+Table roles {
+  id Int [pk, increment]
+  name String [not null]
+  user users [not null]
+  permission permission_roles [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+}
+
+Table permissions {
+  id Int [pk, increment]
+  name String [not null]
+  permissions permission_roles [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+}
+
+Table permission_roles {
+  roleId Int [not null]
+  permissionId Int [not null]
+  Role roles
+  Permission permissions
+
+  indexes {
+    (roleId, permissionId) [pk]
+  }
+}
+
+Table categories {
+  id Int [pk, increment]
+  name String [unique, not null]
+  isDeleted Boolean [not null, default: false]
+  products products [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+}
+
+Table products {
+  id Int [pk, increment]
+  name String [not null]
+  quantity Int [not null]
+  price Float [not null]
+  description String [not null]
+  isDeleted Boolean [not null, default: false]
+  categoryId Int
+  productImages product_images [not null]
+  Cart Cart [not null]
+  Order item_order [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Category categories
+}
+
+Table product_images {
+  id Int [pk, increment]
+  imageUrl String [not null]
+  productId Int
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Product products
+}
+
+Table Cart {
+  id Int [pk, increment]
+  userId Int
+  productId Int
+  quantity Int [not null]
+  total Float [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Product products
+  User users
+}
+
+Table orders {
+  id Int [pk, increment]
+  invoice String [unique, not null]
+  date DateTime [not null]
+  destination Int [not null]
+  totalOrder Float [not null]
+  totalOngkir Float [not null]
+  grandTotal Float [not null]
+  userId Int
+  status Status [not null]
+  orderItem item_order [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  User users
+}
+
+Table item_order {
+  id Int [pk, increment]
+  productId Int [not null]
+  orderId Int [not null]
+  quantity Int [not null]
+  price Float [not null]
+  total Float [not null]
+  createdAt DateTime [default: `now()`, not null]
+  updatedAt DateTime [not null]
+  Product products [not null]
+  Order orders [not null]
+}
+
+Enum Status {
+  WAITING_FOR_PAYMENT
+  PAID
+  DELIVERED
+  COMPLETED
+  CANCELLED
+}
+
+Ref: users.roleId > roles.id
+
+Ref: permission_roles.roleId > roles.id
+
+Ref: permission_roles.permissionId > permissions.id
+
+Ref: products.categoryId > categories.id
+
+Ref: product_images.productId > products.id
+
+Ref: Cart.productId > products.id
+
+Ref: Cart.userId > users.id
+
+Ref: orders.userId > users.id
+
+Ref: item_order.productId > products.id
+
+Ref: item_order.orderId > orders.id
